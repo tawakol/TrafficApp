@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Login | TrafficApp</title>
+  <title>Home | TrafficApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -16,26 +16,60 @@
   <script src="js/trafficapp.js"></script>
 </head>
 <body>
-  <div data-role="page" data-control-title="Login" id="page9">
+  <div data-role="page" data-control-title="Home" id="home">
       <div id="pageHeader" data-theme="c" data-role="header" data-position="fixed">
+          <a data-role="button" data-inline="true" href="login.html" data-icon="gear" data-iconpos="notext" class="ui-btn-right headerButtonRight">
+          </a>
           <h3 class="headerTitle">
               TrafficApp
           </h3>
       </div>
       <div data-role="content">
-          <div data-role="fieldcontain" data-controltype="textinput">
-              <label for="textinput1">
-                  Username
-              </label>
-              <input name="" id="textinput1" placeholder="" value="" type="text" data-mini="true"/>
-          </div>
-          <div data-role="fieldcontain" data-controltype="textinput">
-              <label for="textinput2">
-                  Password
-              </label>
-              <input name="" id="textinput2" placeholder="" value="" type="password" data-mini="true"/>
-          </div>
-          <input type="submit" value="Login" class="button login"/>
+          <ul id="homeFavs" data-role="listview" data-divider-theme="c" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Home To Work
+              </li>
+              <li data-theme="c">
+                  *Status Bar*
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Work To Home
+              </li>
+              <li data-theme="c">
+                  *Status Bar*
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Halifax To Dartmouth
+              </li>
+              <li data-theme="c">
+                  *Status Bar*
+              </li>
+              <li data-role="list-divider" role="heading">
+                  Dartmouth To Halifax
+              </li>
+              <li data-theme="c">
+                  *Status Bar*
+              </li>
+          </ul>
+      </div>
+      <div id="pageFooter" data-role="tabbar" data-iconpos="left" data-theme="c">
+          <ul>
+              <li>
+                  <a href="index.html" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="allroutes1.html" data-transition="fade" data-theme="" data-icon="bars">
+                      All Routes
+                  </a>
+              </li>
+              <li>
+                  <a href="report1.html" data-transition="fade" data-theme="" data-icon="plus">
+                      Report
+                  </a>
+              </li>
+          </ul>
       </div>
   </div>
 </body>

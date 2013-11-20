@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Report - Main Areas | TrafficApp</title>
+  <title>All Routes - Favourites | TrafficApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -16,47 +16,50 @@
   <script src="js/trafficapp.js"></script>
 </head>
 <body>
-  <div data-role="page" data-control-title="Report - Main Areas" id="page6">
+  <div data-role="page" data-control-title="All Routes - Favourites" id="allroutes2">
       <div id="pageHeader" data-theme="c" data-role="header" data-position="fixed">
+          <a data-role="button" data-inline="true" href="allroutes2.html" data-icon="edit" data-iconpos="left" class="ui-btn-right">
+              Edit
+          </a>
           <h3>
-              Report
+              All Routes
           </h3>
       </div>
       <div data-role="content">
           <div data-role="navbar" data-iconpos="left">
               <ul>
                   <li>
-                      <a href="page2.html" data-transition="fade" data-theme="" data-icon="">
+                      <a href="allroutes1.html" data-transition="fade" data-theme="" data-icon="">
                           Areas
                       </a>
                   </li>
                   <li>
-                      <a href="page5.html" data-transition="fade" data-theme="" data-icon="">
+                      <a href="allroutes2.html" data-transition="fade" data-theme="" data-icon="">
                           Favourites
                       </a>
                   </li>
               </ul>
           </div>
           <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"/>
-          <ul id="areaList" data-role="listview" data-divider-theme="c" data-inset="false">
+          <ul id="favList" data-role="listview" data-divider-theme="c" data-inset="false">
               <li data-theme="c">
-                  <a href="page1.html" data-transition="slide">
-                      Halifax
+                  <a href="report3.html" data-transition="slide">
+                      Home To Work
                   </a>
               </li>
               <li data-theme="c">
-                  <a href="page1.html" data-transition="slide">
-                      Bedford
+                  <a href="index.html" data-transition="slide">
+                      Work To Home
                   </a>
               </li>
               <li data-theme="c">
-                  <a href="page1.html" data-transition="slide">
-                      Dartmouth
+                  <a href="index.html" data-transition="slide">
+                      Halifax To Dartmouth
                   </a>
               </li>
               <li data-theme="c">
-                  <a href="page1.html" data-transition="slide">
-                      Lower Sackville
+                  <a href="index.html" data-transition="slide">
+                      Dartmouth To Halifax
                   </a>
               </li>
           </ul>
@@ -64,17 +67,17 @@
       <div id="pageFooter" data-role="tabbar" data-iconpos="left" data-theme="c">
           <ul>
               <li>
-                  <a href="page1.html" data-transition="fade" data-theme="" data-icon="home">
+                  <a href="index.html" data-transition="fade" data-theme="" data-icon="home">
                       Home
                   </a>
               </li>
               <li>
-                  <a href="page2.html" data-transition="fade" data-theme="" data-icon="bars">
+                  <a href="allroutes1.html" data-transition="fade" data-theme="" data-icon="bars">
                       All Routes
                   </a>
               </li>
               <li>
-                  <a href="page6.html" data-transition="fade" data-theme="" data-icon="plus">
+                  <a href="report1.html" data-transition="fade" data-theme="" data-icon="plus">
                       Report
                   </a>
               </li>

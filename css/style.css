@@ -1,0 +1,24 @@
+li.routeItems {
+	background-color: #ACACAC;
+	color: #333;
+	text-indent: 10px;
+	font-size: 17px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	cursor: pointer;
+	border-bottom-style: solid;
+	border-bottom-color:#666;
+	border-bottom-width: 1px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	
+}
+
+li.routeItems:first-child{
+	border-top: solid #333 1px;
+
+}
+
+li.routeItems:hover{
+	background-color:darkgrey;
+}

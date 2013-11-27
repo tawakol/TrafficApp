@@ -2,53 +2,37 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Home | TrafficApp</title>
+  <title>Report - Halifax | TrafficApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <link href="css/codiqa.ext.min.css" rel="stylesheet">
   <link href="css/jqm-neue.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.mobile-1.3.1.min.js"></script>
   <script src="js/codiqa.ext.min.js"></script>
   <script src="js/trafficapp.js"></script>
+  <script src="js/loadroutes.js"></script>
 </head>
 <body>
-  <div data-role="page" data-control-title="Home" id="home">
+
+  <div data-role="page" data-control-title="Report - Home To Work" id="report3">
       <div id="pageHeader" data-theme="c" data-role="header" data-position="fixed">
-          <a data-role="button" data-inline="true" href="login.html" data-icon="gear" data-iconpos="notext" class="ui-btn-right headerButtonRight">
+      <a data-role="button" data-inline="true" href="#" onclick="history.go(0)" data-icon="refresh" data-iconpos="notext" class="ui-btn-right codiqa-control ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-notext ui-btn-up-c" data-cid="button14" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" title=""><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-refresh ui-icon-shadow">&nbsp;</span></span></a>
+          <a data-role="button" data-inline="true" data-direction="reverse" data-rel="back" data-transition="slide" data-theme="c" href="report1.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+              Back
           </a>
-          <h3 class="headerTitle">
-              TrafficApp
+          <h3 class = 'areaheader'>
+              Halifax Routes
           </h3>
       </div>
       <div data-role="content">
-          <ul id="homeFavs" data-role="listview" data-divider-theme="c" data-inset="false">
+          <ul id="Routes" data-role="listview" data-divider-theme="c" data-inset="false">
               <li data-role="list-divider" role="heading">
-                  Home To Work
-              </li>
-              <li data-theme="c">
-                  *Status Bar*
-              </li>
-              <li data-role="list-divider" role="heading">
-                  Work To Home
-              </li>
-              <li data-theme="c">
-                  *Status Bar*
-              </li>
-              <li data-role="list-divider" role="heading">
-                  Halifax To Dartmouth
-              </li>
-              <li data-theme="c">
-                  *Status Bar*
-              </li>
-              <li data-role="list-divider" role="heading">
-                  Dartmouth To Halifax
-              </li>
-              <li data-theme="c">
-                  *Status Bar*
+                  Routes
               </li>
           </ul>
       </div>

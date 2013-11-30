@@ -7,15 +7,10 @@
 	if($_GET['action'] == 'get') {
 		$con=mysqli_connect(DBHOST, DBUSER, DBPASS, DB);
 		// base query
-		$query = 'select * FROM routes';
+		$query = 'select * FROM comments';
 		// limit by key
-		if(!empty($_GET['area']))
-			$query .= " WHERE area = '{$_GET['area']}'";
-<<<<<<< HEAD
-=======
-        if(!empty($_GET['route']))
-			$query .= " WHERE  routeID = '{$_GET['route']}'";
->>>>>>> added functionality
+		if(!empty($_GET['route']))
+			$query .= " WHERE routeID = '{$_GET['route']}'";
         $result = mysqli_query($con,$query);
         $data = array();
         while ($row = mysqli_fetch_array($result, MYSQL_ASSOC))

@@ -36,6 +36,7 @@ function determineTraffic(trafficNum){
 	if (trafficNum == null){
 		return 'grey';
 	} else if (trafficNum == 1){
+<<<<<<< HEAD
 		return '#2ed600'; //green
 	} else if (trafficNum == 2){
 		return '#ffd200'; //yellow
@@ -43,5 +44,14 @@ function determineTraffic(trafficNum){
 		return '#ff8400'; //orange
 	} else if (trafficNum == 4){
 		return '#ff3333'; //red
+=======
+		return '#74b637'; //green
+	} else if (trafficNum == 2){
+		return '#edd052'; //yellow
+	} else if (trafficNum == 3){
+		return '#ff8400'; //orange
+	} else if (trafficNum == 4){
+		return '#d72e2e'; //red
+>>>>>>> added functionality
 	}
 }

@@ -10,7 +10,7 @@ $con = new mysqli(DBHOST, DBUSER, DBPASS, DB);
 
 // do a login attempt
 $sql = $con->prepare("SELECT id from users where email=? AND password=?");
-$sql->bind_param("ss", $_POST['email'], encryptPassword($_POST['password']) );
+$sql->bind_param("ss", $_POST['username'], encryptPassword($_POST['password']) );
 $sql->execute();
 $sql->bind_result($userid, $login);
 $sql->fetch();

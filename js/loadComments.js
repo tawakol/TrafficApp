@@ -1,7 +1,11 @@
 
 $(function() {
 		//alert(document.name);
+<<<<<<< HEAD
         var routeID;
+=======
+        var L
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
         });
 
 function loadReportPage(LocationString){
@@ -13,11 +17,15 @@ function loadRoadPage(LocationString){
 }
 
 function loadFromDB(LocationString, callback){
+<<<<<<< HEAD
     routeID = LocationString;
+=======
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
 	var data = {};
 	var area = $.post('php/getComments.php?action=get&route=' + LocationString, data, callback);
 }
 
+<<<<<<< HEAD
 function loadRoutesPage(data){
     routeID = getUrlParameters("route", "", true);
     if (data == null){
@@ -29,6 +37,8 @@ function loadRoutesPage(data){
     }
 }
 
+=======
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
 function loadRouteInfo(LocationString, callback){
     var data = {};
     var area = $.post('php/getRoutes.php?action=get&route=' + LocationString, data, callback); 

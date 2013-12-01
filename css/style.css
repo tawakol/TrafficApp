@@ -22,6 +22,11 @@ li.routeItems:first-child{
 li.routeItems:hover{
 	background-color:darkgrey;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
 
 li.comments {
 	background-color: white;
@@ -68,7 +73,12 @@ p.timestamp{
     font-size: 10px;
 }
 
+<<<<<<< HEAD
 div#test{
     margin:auto;
 }
 
+=======
+
+>>>>>>> added functionality
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376

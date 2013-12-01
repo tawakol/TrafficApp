@@ -24,18 +24,18 @@
       </div>
       <div data-role="content">
           <div data-role="fieldcontain" data-controltype="textinput">
-              <label for="textinput1">
+              <label for="username">
                   Username
               </label>
-              <input name="" id="textinput1" placeholder="" value="" type="text" data-mini="true"/>
+              <input name="" id="username" placeholder="" value="" type="text" data-mini="true"/>
           </div>
           <div data-role="fieldcontain" data-controltype="textinput">
-              <label for="textinput2">
+              <label for="password">
                   Password
               </label>
-              <input name="" id="textinput2" placeholder="" value="" type="password" data-mini="true"/>
+              <input name="" id="password" placeholder="" value="" type="password" data-mini="true"/>
           </div>
-          <input type="submit" data-inline="true" value="Login" class="button login"/>
+          <input type="submit" data-inline="true" value="Login" class="button login" formaction="php/checklogin.php"/>
           <a data-role="button" data-inline="true" data-direction="reverse" data-rel="back" href="login.html">
               Cancel
           </a>

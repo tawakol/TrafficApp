@@ -1,0 +1,94 @@
+li.routeItems {
+	background-color: #ACACAC;
+	color: #333;
+	text-indent: 10px;
+	font-size: 17px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	cursor: pointer;
+	border-bottom-style: solid;
+	border-bottom-color:#666;
+	border-bottom-width: 1px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	
+}
+
+li.routeItems:first-child{
+	border-top: solid #333 1px;
+
+}
+
+li.routeItems:hover{
+	background-color:darkgrey;
+}
+
+li.comments {
+	background-color: white;
+	color: #333;
+	text-indent: 10px;
+	font-size: 17px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom-style: solid;
+	border-bottom-color:#666;
+	border-bottom-width: 1px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	
+}
+
+li.comments:first-child{
+	border-top: solid #666 1px;
+
+}
+
+a.ui-btn-left{
+    border-style: solid 1px #777;
+}
+
+fieldset.colorbox{
+    border: solid 1px #999;
+    width: 25px;
+    height: 25px;
+    display:inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+
+p.timestamp{
+    display:inline-block;
+    float:right;
+    margin:auto;
+    vertical-align:middle;
+    margin-right: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+div#test{
+    margin:auto;
+}
+
+@media only screen and (max-device-width: 480px) {
+    li.routeItems{
+        font-size: 10px;
+    }
+    
+    li.comments{
+        font-size: 10px;   
+    }
+    
+    fieldset.colorbox{
+        width: 10px;
+        height: 10px;
+    }
+    
+    p.timestamp{
+        font-size: 5px
+    }
+}
+    
+    
+

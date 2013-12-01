@@ -1,5 +1,5 @@
 $(function() {
-        
-        //Insert code here
-        
+    $(document).ready(function () {
+        $('#test').weatherfeed(['CAXX0183']);
+    });
         });

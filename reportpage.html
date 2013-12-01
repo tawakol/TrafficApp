@@ -1,52 +1,59 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Report - Hammonds Plains | TrafficApp</title>
+  <title>Report | TrafficApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <link href="css/codiqa.ext.min.css" rel="stylesheet">
   <link href="css/jqm-neue.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.mobile-1.3.1.min.js"></script>
   <script src="js/codiqa.ext.min.js"></script>
   <script src="js/trafficapp.js"></script>
+  <script src="js/loadReportPage.js"></script>
 </head>
 <body>
-  <div data-role="page" data-control-title="Report - Hammonds Plains" id="reportpage">
-      <div id="pageHeaderStatus" data-theme="d" data-role="header" data-position="fixed">
-          <h5 class="updated">
-              Updated 7 Minutes Ago
-          </h5>
-          <h3 class="routeTitle">
-              Home To Work
-          </h3>
+    
+    <script>
+    var routeID = getUrlParameters("route", "", true);
+    loadFromDB(routeID, addToPage);
+    loadRouteInfo(routeID, updateInfo);
+    </script>
+    
+    
+  <div data-role="page" data-control-title="Report" id="reportpage">
+      <div id="header" data-theme="d" data-role="header" data-position="fixed">
+          <h5 id="routeTimeSince"></h5>
+          <h3 id="routeTitle"></h3>
       </div>
       <div data-role="content">
           <h3>
               How is the traffic right now?
           </h3>
-          <div class="ui-grid-a">
-              <div class="ui-block-a">
-                  <a id="status1" data-role="button" data-theme="d" href="reportpage.html">
+         <div class="ui-grid-a">
+              <div class="ui-block-a" id="status1">
+                  <a data-role="button" data-theme="d" onclick="setSelected(1)">
                       Good
                   </a>
               </div>
-              <div class="ui-block-b">
-                  <a id="status2" data-role="button" data-theme="e" href="reportpage.html">
+              <div class="ui-block-b" id="status2">
+                  <a data-role="button" data-theme="e" onclick="setSelected(2)">
                       Not Bad
                   </a>
               </div>
-              <div class="ui-block-a">
-                  <a id="status3" data-role="button" data-theme="b" href="reportpage.html">
+              <div class="ui-block-a" id="status3">
+                  <a data-role="button" data-theme="b" onclick="setSelected(3)" style="background-color:#F6AC4E">
                       Slow
                   </a>
               </div>
-              <div class="ui-block-b">
-                  <a id="status4" data-role="button" data-theme="f" href="reportpage.html">
+              <div class="ui-block-b" id="status4">
+                  <a data-role="button" data-theme="f" onclick="setSelected(4)">
                       Avoid
                   </a>
               </div>
@@ -54,13 +61,14 @@
           <div data-role="fieldcontain" data-controltype="textarea">
               <textarea name="comment" id="comment" placeholder="Comment" data-mini="true"></textarea>
           </div>
-          <a id="submitreport" data-role="button" data-inline="true" href="reportpage.html" data-icon="check" data-iconpos="left">
+          <a id="submitreport" data-role="button" data-inline="true" onclick="submitToDB(loadRoadPage)" data-icon="check" data-iconpos="left">
               Submit
           </a>
-          <a data-role="button" data-inline="true" data-direction="reverse" data-rel="back" href="reportpage.html" data-icon="delete" data-iconpos="left">
+          <a data-role="button" data-inline="true" data-direction="reverse" data-rel="back" onclick="history.go(-1)" data-icon="delete" data-iconpos="left">
               Cancel
           </a>
       </div>
   </div>
 </body>
 </html>
+

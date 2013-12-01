@@ -11,8 +11,21 @@
 		// limit by key
 		if(!empty($_GET['area']))
 			$query .= " WHERE area = '{$_GET['area']}'";
+<<<<<<< HEAD
         if(!empty($_GET['route']))
 			$query .= " WHERE  routeID = '{$_GET['route']}'";
+=======
+<<<<<<< HEAD
+        if(!empty($_GET['route']))
+			$query .= " WHERE  routeID = '{$_GET['route']}'";
+=======
+<<<<<<< HEAD
+=======
+        if(!empty($_GET['route']))
+			$query .= " WHERE  routeID = '{$_GET['route']}'";
+>>>>>>> added functionality
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
         $result = mysqli_query($con,$query);
         $data = array();
         while ($row = mysqli_fetch_array($result, MYSQL_ASSOC))

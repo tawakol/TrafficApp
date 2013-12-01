@@ -22,6 +22,14 @@ li.routeItems:first-child{
 li.routeItems:hover{
 	background-color:darkgrey;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
 
 li.comments {
 	background-color: white;
@@ -44,7 +52,12 @@ li.comments:first-child{
 }
 
 a.ui-btn-left{
+<<<<<<< HEAD
     border-style: solid 1px #777;
+=======
+    background-color: #9B9B9B;
+    border-style: none;
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
 }
 
 fieldset.colorbox{
@@ -67,10 +80,15 @@ p.timestamp{
     font-size: 10px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
 div#test{
     margin:auto;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-device-width: 480px) {
     li.routeItems{
         font-size: 10px;
@@ -92,3 +110,9 @@ div#test{
     
     
 
+=======
+=======
+
+>>>>>>> added functionality
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2

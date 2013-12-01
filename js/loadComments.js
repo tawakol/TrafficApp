@@ -1,7 +1,15 @@
 
 $(function() {
 		//alert(document.name);
+<<<<<<< HEAD
         var routeID;
+=======
+<<<<<<< HEAD
+        var routeID;
+=======
+        var L
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
         });
 
 function loadReportPage(LocationString){
@@ -13,11 +21,22 @@ function loadRoadPage(LocationString){
 }
 
 function loadFromDB(LocationString, callback){
+<<<<<<< HEAD
     routeID = LocationString;
+=======
+<<<<<<< HEAD
+    routeID = LocationString;
+=======
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
 	var data = {};
 	var area = $.post('php/getComments.php?action=get&route=' + LocationString, data, callback);
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
 function loadRoutesPage(data){
     routeID = getUrlParameters("route", "", true);
     if (data == null){
@@ -29,6 +48,11 @@ function loadRoutesPage(data){
     }
 }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
 function loadRouteInfo(LocationString, callback){
     var data = {};
     var area = $.post('php/getRoutes.php?action=get&route=' + LocationString, data, callback); 

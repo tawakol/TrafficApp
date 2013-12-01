@@ -116,7 +116,15 @@ function setSelected(traffic){
             document.getElementById("status2").removeAttribute("style");
         if (window.status3check == true)
             document.getElementById("status3").removeAttribute("style");
+<<<<<<< HEAD
         if (window.status4check == true)
+=======
+<<<<<<< HEAD
+        if (window.status4check == true)
+=======
+        if (swindow.tatus4check == true)
+>>>>>>> ee91f5f99a808384cd192c3169da001d3f3d3376
+>>>>>>> f3c28877b9d958b62d34ebe3be5bc78579852dc2
             document.getElementById("status4").removeAttribute("style");
        document.getElementById("status1").setAttribute("style", "border:solid 1px green");
         window.status1check = true;

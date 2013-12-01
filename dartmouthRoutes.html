@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Report - Dartmouth | TrafficApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jqm-neue.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/trafficapp.js"></script>
+  <script src="js/loadroutesD.js"></script>
+</head>
+<body>
+<php>
+
+  <div data-role="page" data-control-title="Report - Home To Work" id="report3">
+      <div id="pageHeader" data-theme="c" data-role="header" data-position="fixed">
+           <a data-role="button" data-inline="true" href="#" onclick="history.go(0)" data-icon="refresh" data-iconpos="notext" class="ui-btn-right codiqa-control ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-notext ui-btn-up-c" data-cid="button14" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" title=""><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-refresh ui-icon-shadow">&nbsp;</span></span></a>
+          <a data-role="button" data-inline="true" data-direction="reverse" data-rel="back" data-transition="slide" data-theme="c" href="report1.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+              Back
+          </a>
+          <h3 class = 'areaheader'>
+              Dartmouth Routes
+          </h3>
+      </div>
+      <div data-role="content">
+          <ul id="Routes" data-role="listview" data-divider-theme="c" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Routes
+              </li>
+          </ul>
+      </div>
+      <div id="pageFooter" data-role="tabbar" data-iconpos="left" data-theme="c">
+          <ul>
+              <li>
+                  <a href="index.html" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="allroutes1.html" data-transition="fade" data-theme="" data-icon="bars">
+                      All Routes
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>
